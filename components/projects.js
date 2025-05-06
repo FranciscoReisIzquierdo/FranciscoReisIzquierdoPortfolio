@@ -42,7 +42,7 @@ const projects = [
 export default function ProjectSections() {
   return (
     <>
-      <section id="projects" className="w-full mx-auto mt-24 py-8 lg:py-16 sm:py-6 mb-8 lg:mb-16 scroll-margin-top">
+      <section id="projects" className="w-full mx-auto mt-24 py-8 lg:py-16 sm:py-6 mb-8 lg:mb-16 scroll-mt-[80px]">
         <h2 className="text-3xl sm:text-5xl text-center font-semibold text-blue-200 font-poppins mb-16 sm:mb-8">
           <span>Take a Look at</span><br />
           <span>Some of My Projects</span>

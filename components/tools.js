@@ -50,7 +50,7 @@ export default function SkillsSphere() {
   };
 
   return (
-    <section id="tools" className="w-full mx-auto mt-24 py-8 lg:py-16 scroll-margin-top">
+    <section id="tools" className="w-full mx-auto mt-24 py-8 lg:py-16 scroll-mt-[80px]">
       <h2 className="text-3xl sm:text-5xl lg:text-5xl text-center font-semibold text-blue-200 font-poppins mb-20">
         Development Stack
       </h2>

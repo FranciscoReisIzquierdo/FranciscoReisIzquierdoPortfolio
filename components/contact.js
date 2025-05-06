@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="w-full px-4 sm:px-[10vw] py-8 lg:py-16 mt-24 mb-8 lg:mb-16 scroll-margin-top">
+    <section id="contact" className="w-full px-4 sm:px-[10vw] py-8 lg:py-16 mt-24 mb-8 lg:mb-16 scroll-mt-[80px]">
       
       {/* Title */ }
       <h2 className="text-3xl sm:text-5xl lg:text-5xl font-semibold text-blue-200 font-poppins text-center mb-12 sm:mb-16 lg:mb-20">
@@ -75,7 +75,7 @@ const Contact = () => {
             onChange={handleChange}
             className="block p-3 w-full text-sm font-poppins rounded-lg border
               bg-[#02001E]/5 backdrop-blur-lg dark:border-gray-600
-              dark:placeholder-gray-400 dark:text-white
+              dark:placeholder-gray-400 text-white
               focus:outline-none focus:ring focus:ring-blue-200"
             placeholder="your@email.com"
             required
@@ -95,7 +95,7 @@ const Contact = () => {
             onChange={handleChange}
             className="block p-3 w-full text-sm font-poppins rounded-lg border
               bg-[#02001E]/5 backdrop-blur-lg dark:border-gray-600
-              dark:placeholder-gray-400 dark:text-white
+              dark:placeholder-gray-400 text-white
               focus:outline-none focus:ring focus:ring-blue-200"
             placeholder="Let me know how I can help you"
             required
@@ -115,7 +115,7 @@ const Contact = () => {
             onChange={handleChange}
             className="block p-3 w-full text-sm font-poppins rounded-lg border
               bg-[#02001E]/5 backdrop-blur-lg dark:border-gray-600
-              dark:placeholder-gray-400 dark:text-white
+              dark:placeholder-gray-400 text-white
               focus:outline-none focus:ring focus:ring-blue-200"
             placeholder="Leave a message..."
             required

@@ -107,7 +107,7 @@ const AchievementsAndPublications = () => {
   ];
 
   return (
-    <section id="achievements_and_publications" className="w-full mx-auto py-8 lg:py-16 scroll-margin-top">
+    <section id="achievements_and_publications" className="w-full mx-auto py-8 lg:py-16 scroll-mt-[80px]">
       
       {/* Awards Section */}
       <div id="achievements" className="mt-24 space-y-10">
