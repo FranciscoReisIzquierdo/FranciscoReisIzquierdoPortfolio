@@ -36,7 +36,8 @@ export default function Navbar() {
         ${showNavbar ? 'opacity-100' : 'opacity-0 -translate-y-full'}
       `}
     >
-      <div className="w-full flex flex-wrap items-center justify-between px-6 md:px-[10vw] py-5">
+      <div className="w-full max-w-screen overflow-hidden flex flex-wrap items-center justify-between px-6 md:px-[10vw] py-5">
+
         
         {/* Mobile menu button */}
         <button

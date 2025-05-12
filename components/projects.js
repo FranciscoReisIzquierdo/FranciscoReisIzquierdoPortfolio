@@ -11,7 +11,7 @@ const projects = [
     tags: ["AI", "Computer Vision", "Crowd Analytics"],
     skills: ["python", "opencv", "azure", "tensorflow", "flask", "docker"],
     description:
-      "CrowdFlow is data collection and analysis platform that uses AI and surveillance cameras to monitor clients movements inside commercial surfaces. I refined object detection and classification models, developed Rest API server, designed path detection algorithms, communication protocols and crowdflow box firmware.",
+      "CrowdFlow is data collection and analysis platform that uses AI and surveillance cameras to monitor clients movements inside commercial surfaces. I refined object detection and classification models, developed Rest API server, backend architecture and statistical processing modules. I also implemented cloud deployment and managed database integration, including connection handling and query optimization.",
     link: "https://crowdflow.pt/",
     image: "/images/crowdflow.png"
   },
@@ -119,7 +119,7 @@ export default function ProjectSections() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-[#eff4ff] text-[#41567e] font-semibold font-poppins py-1.5 px-6 rounded-xl border-2 border-[#6f85a3] shadow-md transform hover:scale-105 transition-all duration-300 hover:bg-gradient-to-l hover:from-blue-200 hover:to-blue-200"
+                  className="inline-block bg-[#eff4ff] text-[#41567e] font-semibold font-poppins py-1.5 px-6 rounded-xl border-2 border-[#6f85a3] shadow-md transform hover:scale-105 transition-all duration-300 hover:bg-gradient-to-l hover:from-blue-200 hover:to-blue-200 block xl:hidden"
                 >
                   Visit
                 </a>
@@ -129,6 +129,7 @@ export default function ProjectSections() {
               <div className="w-auto max-w-[420px] flex-shrink-0 order-2 xl:order-none sm:mt-4 mt-8">
                 <FloatingLaptop
                   imageSrc={project.image}
+                  linkSrc={project.link}
                   className="w-full h-auto"
                   width={420}
                   height={280}

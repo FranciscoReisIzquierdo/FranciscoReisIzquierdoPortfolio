@@ -64,12 +64,7 @@ export default function IconCloud({ images }) {
   };
 
   const imageElements = images.map((src, i) => (
-    <a
-      key={i}
-      href="#"
-      onClick={handleClick}
-      style={{ display: "inline-block" }}
-    >
+    <a key={i} href="#" style={{ display: "inline-block" }}>
       <img
         src={src}
         alt=""
