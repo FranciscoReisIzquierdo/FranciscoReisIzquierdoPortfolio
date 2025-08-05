@@ -81,12 +81,26 @@ export default function FloatingLaptop({
       {isLargeScreen && (
         <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-gray-800/50 to-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-md flex items-center justify-center z-20">
           <div className="animate-fadeInUp text-white text-lg font-semibold tracking-wide flex items-center gap-2 drop-shadow-[0_0_20px_rgba(0,0,0,0.8)] group-hover:scale-110 transform transition-transform duration-500 ease-in-out">
-            <span className="animate-wiggle text-[20px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] group-hover:animate-bounce group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 ease-in-out text-gray-300 group-hover:drop-shadow-xl">
-              👉
-            </span>
-            <span className="text-gradient text-gray-300 font-bold font-poppins text-sm sm:text-sm md:text-lg lg:text-xl xl:text-2xl group-hover:translate-y-2 transform transition-transform duration-300 ease-in-out group-hover:opacity-100 opacity-90">
-              Visit
-            </span>
+          <div className="flex items-center space-x-2 group cursor-pointer transition-transform duration-500 ease-in-out
+  group-hover:scale-105 group-hover:rotate-2 group-hover:drop-shadow-xl"
+>
+  <span className="inline-block text-[20px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[36px] text-gray-300">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-9 xl:h-9"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+    </svg>
+  </span>
+  <span className="text-gradient text-gray-300 font-bold font-poppins text-sm sm:text-sm md:text-lg lg:text-xl xl:text-2xl opacity-90">
+    Visit
+  </span>
+</div>
+
           </div>
         </div>
       )}

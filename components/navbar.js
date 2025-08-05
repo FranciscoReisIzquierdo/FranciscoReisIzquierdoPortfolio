@@ -1,19 +1,29 @@
 import { useState, useEffect, useRef } from 'react';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen]       = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('intro');
   const [showNavbar, setShowNavbar] = useState(true);
   const lastScrollY = useRef(0);
 
   const navItems = [
-    { href: '#introduction',                  label: 'Francisco Izquierdo',         key: 'intro' },
-    { href: '#projects',                      label: 'Projects',                    key: 'projects' },
-    { href: '#tools',                         label: 'Tools',                       key: 'skillssphere' },
+    { href: '#introduction', label: 'Francisco Izquierdo', key: 'intro' },
+    { href: '#projects', label: 'Projects', key: 'projects' },
+    { href: '#tools', label: 'Tools', key: 'skillssphere' },
     { href: '#achievements_and_publications', label: 'Achievements & Publications', key: 'achievements' },
-    { href: '#contact',                       label: 'Contact',                     key: 'contact' },
+    { href: '#contact', label: 'Contact', key: 'contact' },
   ];
 
+  // Mapping from href to key for easier lookup
+  const hrefToKey = {
+    '#introduction': 'intro',
+    '#projects': 'projects',
+    '#tools': 'skillssphere',
+    '#achievements_and_publications': 'achievements',
+    '#contact': 'contact',
+  };
+
+  // Handle navbar show/hide on scroll
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -28,6 +38,78 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Handle section tracking with Intersection Observer
+  useEffect(() => {
+    const sections = navItems.map(item => document.querySelector(item.href)).filter(Boolean);
+    
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Sort entries by their position on the page
+        const sortedEntries = entries
+          .filter(entry => entry.isIntersecting)
+          .sort((a, b) => a.target.offsetTop - b.target.offsetTop);
+
+        if (sortedEntries.length > 0) {
+          // Get the scroll position relative to viewport
+          const scrollY = window.scrollY;
+          const viewportHeight = window.innerHeight;
+          const scrollCenter = scrollY + viewportHeight / 2;
+
+          // Find the section whose center is closest to the viewport center
+          let bestSection = null;
+          let minDistance = Infinity;
+
+          sortedEntries.forEach(entry => {
+            const section = entry.target;
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionCenter = sectionTop + sectionHeight / 2;
+            
+            // Calculate distance from viewport center to section center
+            const distance = Math.abs(scrollCenter - sectionCenter);
+            
+            // Prioritize sections that have significant visibility
+            if (entry.intersectionRatio > 0.1 && distance < minDistance) {
+              minDistance = distance;
+              bestSection = section;
+            }
+          });
+
+          // Fallback: if no section meets the criteria, use the first intersecting one
+          if (!bestSection && sortedEntries.length > 0) {
+            bestSection = sortedEntries[0].target;
+          }
+
+          if (bestSection) {
+            const sectionId = '#' + bestSection.id;
+            const correspondingKey = hrefToKey[sectionId];
+            if (correspondingKey && correspondingKey !== activeLink) {
+              setActiveLink(correspondingKey);
+            }
+          }
+        }
+      },
+      {
+        threshold: [0, 0.1, 0.25, 0.5, 0.75, 1.0],
+        rootMargin: '-10% 0px -10% 0px' // Smaller margin for more precise detection
+      }
+    );
+
+    sections.forEach(section => observer.observe(section));
+
+    return () => {
+      sections.forEach(section => observer.unobserve(section));
+    };
+  }, [activeLink]);
+
+  const handleNavClick = (e, item) => {
+    e.preventDefault();
+    setActiveLink(item.key);
+    document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <nav
       className={`
@@ -37,7 +119,6 @@ export default function Navbar() {
       `}
     >
       <div className="w-full max-w-screen overflow-hidden flex flex-wrap items-center justify-between px-6 md:px-[10vw] py-5">
-
         
         {/* Mobile menu button */}
         <button
@@ -70,11 +151,7 @@ export default function Navbar() {
             {navItems.map(item => (
               <li key={item.key}>
                 <a
-                  onClick={e => {
-                    e.preventDefault();
-                    setActiveLink(item.key);
-                    document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
-                  }}
+                  onClick={(e) => handleNavClick(e, item)}
                   href={item.href}
                   className={`
                     text-md font-semibold font-poppins transition-all duration-200 border-b-2
