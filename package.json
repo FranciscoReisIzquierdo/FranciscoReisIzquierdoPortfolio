@@ -5,8 +5,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "export": "next export",
-        "deploy": "GITHUB_PAGES=true npm run build && npm run export && npx gh-pages -d out"
+        "predeploy": "npm run build",
+        "deploy": "cross-env GITHUB_PAGES=true npm run build && npx gh-pages -d out"
     },
     "dependencies": {
         "@react-spring/three": "^9.7.5",
@@ -36,9 +36,10 @@
     },
     "devDependencies": {
         "autoprefixer": "latest",
+        "cross-env": "^10.0.0",
         "gh-pages": "^6.3.0",
         "postcss": "latest",
         "tailwindcss": "latest"
     },
-    "homepage": "https://FranciscoReisIzquierdo.github.io/Portfolio"
+    "homepage": "https://FranciscoReisIzquierdo.github.io/FranciscoReisIzquierdoPortfolio"
 }

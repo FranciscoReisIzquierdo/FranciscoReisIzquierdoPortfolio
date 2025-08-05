@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
-const isGithubPages = process.env.GITHUB_PAGES === 'true';
-
 const nextConfig = {
-  output: 'export',
-  assetPrefix: isGithubPages ? '/Portfolio/' : '',
-  basePath: isGithubPages ? '/Portfolio' : '',
+  basePath: '/FranciscoReisIzquierdoPortfolio',
+  assetPrefix: '/FranciscoReisIzquierdoPortfolio/',
   images: {
     unoptimized: true,
   },
