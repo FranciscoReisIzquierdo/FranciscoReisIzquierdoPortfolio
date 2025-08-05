@@ -1,6 +1,6 @@
 # Francisco Izquierdo’s Portfolio
 
-[![Live Demo](https://img.shields.io/badge/demo-online-blue)](https://portfolio-two-ecru-86.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/demo-online-blue)]((https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/))
 
 Welcome to my personal portfolio! I’m **Francisco Izquierdo**, a Machine Learning Engineer with a Master’s in Software Engineering from the University of Minho. I'm a passionate developer specializing in AI, computer vision and back-end development. This site showcases my projects and skills in a clean and modern interface.
 
@@ -8,7 +8,7 @@ Welcome to my personal portfolio! I’m **Francisco Izquierdo**, a Machine Learn
 
 ## 📍 Live Site
 
-👉 [https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/][(https://portfolio-two-ecru-86.vercel.app/](https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/))
+👉 [https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/](https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/))
 
 Feel free to explore my work on any mobile device or desktop!
 
@@ -98,8 +98,8 @@ To run this project locally:
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/FranciscoReisIzquierdo/Portfolio.git
-   cd Portfolio
+   git clone https://github.com/FranciscoReisIzquierdo/FranciscoReisIzquierdoPortfolio.git
+   cd FranciscoReisIzquierdoPortfolio
    ```
 
 2. **Install dependencies**
