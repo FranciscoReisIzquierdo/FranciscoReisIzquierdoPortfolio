@@ -1,6 +1,6 @@
 # Francisco Izquierdo’s Portfolio
 
-[![Live Demo](https://img.shields.io/badge/demo-online-blue)]((https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/))
+[![Live Demo](https://img.shields.io/badge/demo-online-blue)](https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/)
 
 Welcome to my personal portfolio! I’m **Francisco Izquierdo**, a Machine Learning Engineer with a Master’s in Software Engineering from the University of Minho. I'm a passionate developer specializing in AI, computer vision and back-end development. This site showcases my projects and skills in a clean and modern interface.
 
@@ -8,7 +8,7 @@ Welcome to my personal portfolio! I’m **Francisco Izquierdo**, a Machine Learn
 
 ## 📍 Live Site
 
-👉 [https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/](https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/))
+👉 [https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/](https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio
 
 Feel free to explore my work on any mobile device or desktop!
 
