@@ -8,7 +8,7 @@ Welcome to my personal portfolio! I’m **Francisco Izquierdo**, a Machine Learn
 
 ## 📍 Live Site
 
-👉 [https://portfolio-eta-flame-25.vercel.app/](https://portfolio-two-ecru-86.vercel.app/)
+👉 [https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/][(https://portfolio-two-ecru-86.vercel.app/](https://franciscoreisizquierdo.github.io/FranciscoReisIzquierdoPortfolio/))
 
 Feel free to explore my work on any mobile device or desktop!
 
