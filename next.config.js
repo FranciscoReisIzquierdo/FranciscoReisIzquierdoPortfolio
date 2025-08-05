@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
   basePath: '/FranciscoReisIzquierdoPortfolio',
-  assetPrefix: '/FranciscoReisIzquierdoPortfolio/',
+  assetPrefix: '/FranciscoReisIzquierdoPortfolio',
   images: {
-    unoptimized: true,
-  },
-};
+    unoptimized: true
+  }
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

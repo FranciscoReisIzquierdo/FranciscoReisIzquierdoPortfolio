@@ -33,7 +33,7 @@ const AchievementsAndPublications = () => {
   const achievements = [
     {
       content: {
-        imageSrc: "/images/startuppoint.png",
+        imageSrc: "images/startuppoint.png",
         imageAlt: "Startup Point logo",
         height: 224,
         width: 224,
@@ -45,7 +45,7 @@ const AchievementsAndPublications = () => {
     },
     {
       content: {
-        imageSrc: "/images/mnje.png",
+        imageSrc: "images/mnje.png",
         imageAlt: "National Contest for Young Entrepreneurs logo",
         height: 1336,
         width: 1134,
@@ -57,7 +57,7 @@ const AchievementsAndPublications = () => {
     },
     {
       content: {
-        imageSrc: "/images/colegiodealbergaria.png",
+        imageSrc: "images/colegiodealbergaria.png",
         imageAlt: "Colégio de Albergaria Honor Student logo",
         height: 1336,
         width: 1134,
@@ -68,7 +68,7 @@ const AchievementsAndPublications = () => {
     },
     {
       content: {
-        imageSrc: "/images/jobra.png",
+        imageSrc: "images/jobra.png",
         imageAlt: "Jobra Music Conservatory logo",
         height: 1336,
         width: 1134,
@@ -82,7 +82,7 @@ const AchievementsAndPublications = () => {
   const publications = [
     {
       content: {
-        imageSrc: "/images/springer.png",
+        imageSrc: "images/springer.png",
         imageAlt: "Springer Nature logo",
         height: 1336,
         width: 1134,
@@ -94,7 +94,7 @@ const AchievementsAndPublications = () => {
     },
     {
       content: {
-        imageSrc: "/images/alticelabs.png",
+        imageSrc: "images/alticelabs.png",
         imageAlt: "Altice Labs logo",
         height: 1336,
         width: 1134,

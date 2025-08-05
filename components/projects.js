@@ -13,7 +13,7 @@ const projects = [
     description:
       "CrowdFlow is a data collection and analysis platform that uses AI and surveillance cameras to monitor clients movements inside commercial surfaces. I refined object detection and classification models, quantized AI models for deployment on edge devices, developed Rest API server, backend architecture and statistical processing modules. I also implemented cloud deployment and managed database integration, including connection handling and query optimization.",
     link: "https://crowdflow.pt/",
-    image: "/images/crowdflow.png"
+    image: "images/crowdflow.png"
   },
   {
     title: "Hate Speech Recognition – DistilBert Fine-Tuning",
@@ -24,7 +24,7 @@ const projects = [
     description:
       "This project tackles the problem of hate speech and offensive language detection on social media platforms using a fine-tuned DistilBERT transformer model. The motivation stems from the growing challenge faced by online communities to moderate harmful content and ensure safe digital spaces. Manual moderation is not scalable—automated NLP tools can help identify and mitigate toxic behavior at scale.",
     link: "https://github.com/FranciscoReisIzquierdo/Hate-Speech-Recognition-DistilBert-Fine-Tuning",
-    image: "/images/distilbert.png"
+    image: "images/distilbert.png"
   },
   {
     title: "oNode",
@@ -35,7 +35,7 @@ const projects = [
     description:
       "oNode is a prototype platform designed to distribute audio, video, and text content from a central content server to multiple clients. It supports various transport protocols, allowing experimentation and performance testing with different network delivery mechanisms. This setup simulates real-world multimedia distribution systems, focusing on flexibility, modularity, and protocol-level behavior.",
     link: "https://github.com/FranciscoReisIzquierdo/Projeto-de-Engenharia-de-Software-em-Rede",
-    image: "/images/onode.png"
+    image: "images/onode.png"
   },
   {
     title: "Face Fraud Detection",
@@ -46,7 +46,7 @@ const projects = [
     description:
       "This project entails the development of a deep learning model utilizing advanced computer vision techniques to identify AI-generated faces. By employing robust image classification methodologies, the model is designed to effectively distinguish between authentic and synthetic facial images. This capability not only advances the accuracy and reliability of visual content analysis but also plays a crucial role in detecting manipulated media, which is increasingly important in maintaining the integrity of digital information.",
       link: "https://github.com/FranciscoReisIzquierdo/Face-Fraud-Detection-CNN",
-    image: "/images/facefrauddetection.png"
+    image: "images/facefrauddetection.png"
   }
 ]
 
